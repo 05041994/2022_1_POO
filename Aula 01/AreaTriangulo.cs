@@ -9,6 +9,6 @@ public class Program {
     Console.WriteLine("Me diga a altura do triângulo");
     h = double.Parse(Console.ReadLine());
     a = b * h / 2;
-    Console.WriteLine($"Àrea = {a:0.00}");
+    Console.WriteLine($"Àrea = {a:0.000}");
   }
 }
