@@ -1,0 +1,23 @@
+using System;
+
+public class Program {
+
+  public static void Main(string[] args) {
+
+      
+    string x1 = Console.ReadLine();
+    
+    string[] a = x1.Split(' ');
+
+    int maior = int.Parse(a[0]);
+    int menor = int.Parse(a[1]);
+
+   
+    int im = maior % menor;
+
+    
+    if (im == 0 ) Console.WriteLine("Sao Multiplos");
+    else if (im != 0) Console.WriteLine("Nao sao Multiplos");
+           
+  }
+}
