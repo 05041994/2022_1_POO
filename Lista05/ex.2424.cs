@@ -12,13 +12,12 @@ public class Program {
     int c1 = int.Parse(a[0]);
     int c2 = int.Parse(a[1]);
 
-    if (0 <= c1 <= 432 && 0 <= c2  <= 936)
+    if (0 <= c1 && c1 <= 432 && 0 <= c2 && c2 <= 468)
     {
       Console.WriteLine("dentro");
     }
-    else{
+    else{   
       Console.WriteLine("fora");
     }
-    
-  }
+    }
 }
