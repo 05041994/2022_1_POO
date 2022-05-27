@@ -11,13 +11,11 @@ public class Program {
 
     int maior = int.Parse(a[0]);
     int menor = int.Parse(a[1]);
-
-   
-    int im = maior % menor;
-
-    
-    if (im == 0 ) Console.WriteLine("Sao Multiplos");
-    else if (im != 0) Console.WriteLine("Nao sao Multiplos");
-           
+       
+    if ( maior % menor == 0 || menor % maior == 0){ Console.WriteLine("Sao Multiplos");
+            }
+    else {
+      Console.WriteLine("Nao sao Multiplos");
+         }           
   }
 }
