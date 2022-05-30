@@ -12,18 +12,21 @@ using System;
 
       
 			string[] hora = horario.Split(':');
-			hh = int.Parse (hora [0]) % 12;
-			mm = int.Parse (hora [1]) % 60;
+			hh = int.Parse (hora [0]) ;
+			mm = int.Parse (hora [1]) ;
 
-      if((mm => 60) || (hh => 24)){ // codigo erra nesta linha
+      int anguloA = (mm % 60) * 6;										
+			int anguloB = (((hh % 12)* 60) + mm) / 2;
+
+      int diferença = anguloA - anguloB;
+
+      if(mm => 60 || 24 <= hh){ 
         Console.WriteLine("Hora Inválida");
       }
-    	int anguloA = mm * 6;										
-			int anguloB = ((hh * 60) + mm) / 2;							 
-			int diferença = anguloA - anguloB;
-
-      Console.WriteLine ("Menor ângulo entre os ponteiros " + diferença + " graus");
-
-    
+			else{
+              Console.WriteLine ("Menor ângulo entre os ponteiros " + diferença + " graus");
+        
+    }				 
   }
 }
+// Eu to conseguingo fazer melhor que isso e ta dando erro na linha 23. 
