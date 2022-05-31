@@ -20,7 +20,7 @@ using System;
 
       int diferença = anguloA - anguloB;
 
-      if(mm => 60 || 24 <= hh){ 
+      if(mm >= 60 || 24 <= hh){ 
         Console.WriteLine("Hora Inválida");
       }
 			else{
@@ -29,4 +29,3 @@ using System;
     }				 
   }
 }
-// Eu to conseguingo fazer melhor que isso e ta dando erro na linha 23. 
