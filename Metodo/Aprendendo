@@ -1,0 +1,62 @@
+using System;
+
+class Program {
+  public static void Main() {
+    mensagem();
+    Console.WriteLine("Digite o seu nome:");
+    string x = Console.ReadLine();
+    string [] xs = x.Split();
+    bemvindo(xs[0]);
+    Console.WriteLine("Esse é o valor de PI " + pi());
+    Console.WriteLine("O proximo valor depois de 18 é " + proximonumero(18));
+    Console.WriteLine(proximonumeropar(18));
+    Console.WriteLine(proximonumeropar(19));
+    mostrarnumeros(1, 10);
+    Console.WriteLine();
+    mostrarnumeros(11, 20);
+    Console.WriteLine();
+    Console.WriteLine("A sua Media foi de " + media(100, 100, 50, 50));
+    mostrarnumeros(60, 60, 60);
+  }
+
+  public static int media(int n1, int n2, int n3, int n4){
+    int m = (2 * n1 + 2 * n2 + 3 * n3 + 3 * n4) / 10;
+    
+    return m;
+  }
+  public static int notapassar(int n1, int n2, int n3){
+    
+    int (600 - 2 * n1 + 2 * n2 + 3 * n3) / 3 = n4 ;
+    
+    return n4;
+      
+  }
+  public static void mostrarnumeros(int x1, int y){
+    for(int i = x1; x1 <= y; x1++){
+      Console.Write(x1 + " ");
+    }
+  }
+  
+  public static void mensagem(){
+    Console.WriteLine("Hello");
+
+  }
+  public static void bemvindo(string s){
+    Console.WriteLine("Seja Bem-vindo, " + s);
+  }
+  public static double pi(){
+    return 3.1416;
+  }
+  public static int proximonumero(int x1){
+    x1 = x1 + 1;
+    return x1;
+  }
+  public static int proximonumeropar(int x1){
+    x1 = x1 + 1;
+    if ( x1 % 2 != 0){
+      x1 = x1 + 1;
+    }
+    return x1;
+  }
+
+}
