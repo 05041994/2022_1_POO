@@ -11,10 +11,9 @@ class Program {
 
     int nive = 2022 - ano;
 
-    string faixa;
-    if(0 <= nive && nive >= 19) faixa = "Jovem";
-    if(20 <= nive && nive >= 59) faixa = "adulto";
-    else faixa = "Jovem";
-    Console.WriteLine($"Você está na faixa etária: {faixa}");
+    if(0 <= nive && nive <= 19) Console.WriteLine("Você está na faixa etária: Jovem");
+    if(20 <= nive && nive <= 59) Console.WriteLine("Você está na faixa etária: adulto");
+    if(60 <= nive) Console.WriteLine("Você está na faixa etária: Idoso");
+    
   }
 }
